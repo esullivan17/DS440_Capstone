@@ -1,0 +1,108 @@
+import pydicom
+import os
+import numpy as np
+import pandas as pd
+import torch
+from PIL import Image
+from torchvision import transforms
+from sklearn.cluster import KMeans
+import pywt
+from scipy.fftpack import dct
+
+# === Load patient grades from CSV ===
+excel_path = "C:/Users/esul_/Offline Documents/DS 440/REMBRANDT/clinical_processed.csv"
+df = pd.read_csv(excel_path)
+df["Sample"] = df["Sample"].astype(str).str.replace("_", "-", regex=False)
+patient_grades = dict(zip(df["Sample"], df["Grade"]))
+target_folders = set(df["Sample"])
+
+# === Resize only (no normalization or tensor conversion)
+ResizeImage = transforms.Compose([
+    transforms.Resize((256, 256)),
+])
+
+def preprocess_rembrandt(base_path):
+    patient_data = {}
+    
+    for root, dirs, files in os.walk(base_path):
+        matched_subject = next((folder for folder in target_folders if folder in root), None)
+        if matched_subject is None:
+            continue
+
+        for file in files:
+            if not file.endswith(".dcm"):
+                continue
+
+            file_path = os.path.join(root, file)
+            try:
+                print(f"\nProcessing: {file_path}")
+                
+                # Load DICOM
+                dcm_data = pydicom.dcmread(file_path)
+                pixel_array = dcm_data.pixel_array.astype(np.float32)
+
+                # Rescale
+                slope = getattr(dcm_data, 'RescaleSlope', 1)
+                intercept = getattr(dcm_data, 'RescaleIntercept', 0)
+                pixel_array = pixel_array * slope + intercept
+
+                # Normalize to [0, 1]
+                pixel_array -= np.min(pixel_array)
+                if np.max(pixel_array) != 0:
+                    pixel_array /= np.max(pixel_array)
+
+                # Resize
+                image = Image.fromarray((pixel_array * 255).astype(np.uint8))
+                image = ResizeImage(image)
+                image_np = np.array(image).astype(np.float32) / 255.0
+
+                # === K-means Clustering ===
+                flat_pixels = image_np.reshape(-1, 1)
+                kmeans = KMeans(n_clusters=3, n_init=10, random_state=42)
+                cluster_labels = kmeans.fit_predict(flat_pixels)
+                clustered_image = cluster_labels.reshape(256, 256)
+
+                # Identify tumor cluster
+                means = [image_np[clustered_image == i].mean() for i in range(3)]
+                tumor_cluster = np.argmax(means)
+                print(f"K-means cluster means: {means} | Using cluster: {tumor_cluster}")
+
+                tumor_mask = (clustered_image == tumor_cluster).astype(np.float32)
+                masked_image = image_np * tumor_mask
+
+                # === DWT ===
+                coeffs2 = pywt.dwt2(masked_image, 'haar')
+                LL, (LH, HL, HH) = coeffs2
+                print(f"DWT LL shape: {LL.shape}")
+
+                # === DCT on LL ===
+                dct_ll = dct(dct(LL.T, norm='ortho').T, norm='ortho')
+                dct_block = dct_ll[:10, :10].flatten()
+                print(f"DCT block shape: {dct_block.shape}")
+
+                # === Store features ===
+                if matched_subject not in patient_data:
+                    print(f"New patient found: {matched_subject} (Grade {patient_grades.get(matched_subject)})")
+                    patient_data[matched_subject] = {
+                        "grade": patient_grades.get(matched_subject),
+                        "slices": []
+                    }
+
+                rel_path = os.path.relpath(file_path, base_path)
+                patient_data[matched_subject]["slices"].append({
+                    "features": torch.tensor(dct_block, dtype=torch.float32),
+                    "rel_path": rel_path
+                })
+
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
+
+    return patient_data
+
+# Run preprocessing
+rembrandt_dir = "C:/Users/esul_/Offline Documents/DS 440/REMBRANDT/images/manifest-tXudPFfp4347295727406092090/REMBRANDT"
+Patient_Data = preprocess_rembrandt(rembrandt_dir)
+
+# Save to file
+torch.save(Patient_Data, "patient_feature_data.pt")
+print("\nSaved processed feature data to 'patient_feature_data.pt'")
