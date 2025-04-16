@@ -1,0 +1,110 @@
+Sample, Age at Dx (years), Gender, Survival (months), Disease, Grade, Race, Institution, Karnofsky, Neurological Exam Outcome, MRI Desc, Followup Month, Steroid Dose Status, Anti-Convulsant Status, Prior Therapy Radiation Site, Prior Therapy Radiation Fraction Dose, Prior Therapy Radiation Fraction Number, Prior Therapy Radiation Type, Prior Therapy Chemo Agent Name, Prior Therapy Chemo Course Count, Prior Therapy Surgery Procedure Title, Prior Therapy Surgery Tumor Histology, Prior Therapy Surgery Outcome, OnStudy Therapy Radiation Site, OnStudy Therapy Radiation Neurosis Status, OnStudy Therapy Radiation Fraction Dose, OnStudy Therapy Radiation Fraction Number, OnStudy Therapy Radiation Type, OnStudy Therapy Chemo Agent Name, OnStudy Therapy Chemo Course Count, OnStudy Therapy Surgery Procedure Title, OnStudy Therapy Surgery Indication, OnStudy Therapy Surgery Histo Diagnosis, OnStudy Therapy Surgery Outcome
+900-00-1961,2,2,15, ASTROCYTOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5299,2,2,6, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5303,2,2,5, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5308,2,2,17, ASTROCYTOMA,1,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5316,2,2,17, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5317,2,2,17, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5332,2,2,15, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5338,2,2,15, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5339,2,2,15, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5342,2,2,15, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5345,2,2,16, OLIGODENDROGLIOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5346,2,2,10, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5379,2,2,16, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5381,2,2,4, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5382,2,2,16, ASTROCYTOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5384,2,2,9, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5385,2,2,13, ASTROCYTOMA,1,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5393,2,2,13, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5396,2,2,13, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5404,2,2,12, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5413,2,2,2, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5414,2,2,2, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5445,2,2,2, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5458,2,2,7, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5459,2,2,10, ASTROCYTOMA,1,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5462,2,2,2, GBM,2,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5468,2,2,10, ASTROCYTOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5476,2,2,9, OLIGODENDROGLIOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+900-00-5477,2,2,5, ASTROCYTOMA,0,2, TJU,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+HF0608, 50-54, M,10.6, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, rim enhancement and nodular foci ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , 9-AC(2) ,2, subtotal x2 , recurrence , GBM with necrosis , subtotal 
+HF0652, 50-54, M,19.6, GBM,2,2, HENRY FORD HOSPITAL (RETRO),2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+HF0828, 35-39, M,2, OLIGODENDROGLIOMA,1,2, HENRY FORD HOSPITAL (RETRO),2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+HF0835, 35-39, F,45.3, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, non contrast enhancing ,2, NASS , Yes NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT (3D-CRT) , PCV+CCNU; EMD; Temodar; PCV+CCNU(2; 1; 2; 1) ,2, subtotal x 2 , recurrence , anaplastic oligodenroglioma; glioblastoma multiforme , subtotal 
+HF0855, 55-59, M,13.7, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, ring enhancement; thick  irregular and nodular wall ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , BCNU(4) ,2, subtotal , recurrence , radiation necrosis , subtotal 
+HF0899, 55-59, M,66.7, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, noncontrast enhancing ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, subtotal , recurrence , malignant glioma , subtotal 
+HF0920, 85-89, F,1, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, noncontrast enhancing; minimal mass effect ,2, 12 mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF0931, 35-39, F,119, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, noncontrast enhancing ,2, 8 mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PCV(4) ,2, subtotal , recurrence , foreign body granuloma , subtotal 
+HF0953, 35-39, M,44.6, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, complex multicompartment tumor ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , BCNU (2) ,2, subtotal , recurrence , Gemistocytic Astrocytoma , subtotal 
+HF0960, 30-34, F,88.7, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, subtle contrast enhancement; cystic; midline shift ,2, Yes dose unknown , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT (3D-CRT) , Temozolomide; Bay 43; PCV/CCNU(13;1;1),2, subtotal x 2 , recurrence , oligodendroglioma; anaplastic oligodenroglioma , subtotal 
+HF0962, 30-34, M,116.5, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, subtle contrast enhancement ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , Temozolomide(6) ,2, NONE , NONE , NONE , NONE 
+HF0966, 50-54, M,137.7, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, noncontrast enhancing ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PCV  (6) ,2, NONE , NONE , NONE , NONE 
+HF0986, 35-39, F,62.4, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, thick ring enhancing nodular mass ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PCV(4) ,2, subtotal , recurrence , mixed oligoastrocytoma , subtotal 
+HF0990, 40-44, F,88.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, mixed signal intesnsity lesion; bi-frontal; inhomogeneous areas of intense enhancement ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , 5-FU/Carboplatin/Gamma IFN/Thalidomide/plasmapheresis(4) ,2, subtotal , recurrence , GBM , subtotal 
+HF0996, 50-54, F,120.5, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, 3cm x 2cm slightly heterogeneously enahncment ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , BCNU(6) ,2, NONE , NONE , NONE , NONE 
+HF1000, 30-34, M,40.3, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, minimal enhancement ,2, Yes dose unkown , Yes type unknown ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , SU-101(6) ,2, subtotal , recurrence , anaplastic astrocytoma , subtotal 
+HF1032, 40-44, M,28.1, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, non enhancing; small amount of edema ,2, NASS , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PCV(5) ,2, subtotal , recurrence , abcess/infection arteritis , subtotal 
+HF1057, 60-64, F,24.5, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, irregularly enhancing mass; multiple; nodular enhancing  ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , CI-980(4) ,2, subtotal , recurrence , GBM , subtotal 
+HF1058, 50-54, F,18, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, large mass; significant vasogenic edema; mass effect ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , BCNU(1) ,2, NONE , NONE , NONE , NONE 
+HF1059, 60-64, F,11.5, MIXED,1, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, diffuse abnormality; mild compression of R lateral ventrile with mild midline shift ,2, 4mg t.i.d. , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , BCNU(2) ,2, NONE , NONE , NONE , NONE 
+HF1071, 55-59, M,8.8, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, shaggy;  irregular peripheral enhancement; central necrosis and surrounding edema,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ+Thalidomide(3) ,2, NONE , NONE , NONE , NONE 
+HF1077, 40-44, M,73.4, GBM,2, BLACK, HENRY FORD HOSPITAL (RETRO),2,2, enhancing lesion; very little mass effect ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PCV(4) ,2, subtotal , recurrence , GBM , subtotal 
+HF1078, 45-49, M,22.8, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, ring enhancing; multicystic; vasogenic edema; significant mass effect and midline shift ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , penicillamine/low copper diet(9) ,2, subtotal , recurrence , malignant astrocytoma , subtotal 
+HF1097, 50-54, F,9, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, enhancing ,2, NASS , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(2) ,2, NONE , NONE , NONE , NONE 
+HF1122, 35-39, M,7.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, multiple enhancing lesions; in leptomeninges ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT (L Frontal) + WBRT , ARA-C(5) ,2, NONE , NONE , NONE , NONE 
+HF1136, 35-39, F,45.3, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, contrast enhancing ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT (3D-CRT) , PCV + Temozolomide(2 PCV; 5 TMZ) ,2, subtotal , recurrence , anaplastic oligodenroglioma with necrosis , subtotal 
+HF1137, 70-74, F,18.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, irregular enhancing mass with vasogenic edema and mass effect ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1139, 40-44, F,15.8, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, large 6cm x 5cm x 7.2 cm hetrogeneous enhancing mass; edema; mass effect ,2, 4mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(2) ,2, subtotal , recurrence , malignant glioma , subtotal 
+HF1150, 70-74, M,21.2, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, contrast enhancing; ring enhancing; edema ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Temozolomide(11) ,2, NONE , NONE , NONE , NONE 
+HF1156, 30-34, F,105.3, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, large T2 abnormality; tiny focal areas of enhancement ,2, NONE , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, gross total , recurrence , oligodendroglioma  , Gross Total  
+HF1167, 45-49, M,17.9, OLIGODENDROGLIOMA,0, BLACK, HENRY FORD HOSPITAL (RETRO),2,2, noncontrast enhancing; mild mass effect ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Gliadel Wafer(1) ,2, subtotal  , recurrence , oligodenroglioma and radiation necrosis , subtotal 
+HF1185, 25-29, F,95.2, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, contrast enhancing minimally ,2, NONE , Dilantin + Tegratol XR ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Temozolomide(12) ,2, subtotal x 3 , recurrence , Atypical oligodenroglioma; anaplastic oligodenroglioma x 2 , subtotal 
+HF1191, 70-74, F,0.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, nodular enhancement ,2, NONE , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1219, 50-54, M,27.1, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, contrast enhancing; mass effect ,2, 16 mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Temozolomide(12) ,2, subtotal x 2 , recurrence , necrosis; GBM , subtotal 
+HF1227, 25-29, F,251.7, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, large T2 abnormality with nodular patchy enhancement ,2, NASS , Yes Unknown ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(11) ,2, subtotal , recurrence , atypical oligodenroglioma , subtotal 
+HF1232, 50-54, F,20.2, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, calcified; enhancing ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(11) ,2, NONE , NONE , NONE , NONE 
+HF1235, 35-39, M,98.4, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, solitary mass without significant edema or enhancemnt ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1242, 35-39, M,149, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, enhancing mass with significant edema ,2, 16mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(8) ,2, subtotal , recurrence , GBM , subtotal 
+HF1246, 65-69, M,0.2, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, enhancing and non enhancing; leptomeningeal ,2, 4 mg t.i.d. , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1264, 45-49, F,89.1, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, non contrast enhancing ,2, NONE , Tegretol and Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1269, 45-49, M,13, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, intense ray-like and nodular enhancements ,2, 12 mg q 6 hours , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , BCNU(4) ,2, subtotal , recurrence , Anaplastic Astrocytoma , subtotal 
+HF1280, 40-44, F,15.8, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, mulitple large 4cm enhancing lesions; vasogenic edema ,2, Yes Unknown , NONE ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(12) ,2, NONE , NONE , NONE , NONE 
+HF1292, 45-49, M,57.7, GBM,2, ASIAN NOS, HENRY FORD HOSPITAL (RETRO),100,2, 2cm x 3cm well circumscribed lesion; vasogenic edema ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(15) ,2, subtotal , recurrence , GBM , subtotal 
+HF1297, 60-64, F,17.2, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, linear hyperintense lesion ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(7) ,2, NONE , NONE , NONE , NONE 
+HF1316, 70-74, F,6.9, ASTROCYTOMA,0, BLACK, HENRY FORD HOSPITAL (RETRO),2,2, small foci of enhancment; small old hemorrhages ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1325, 35-39, F,84.5, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, non contrast enhancing ,2, NONE , Carbamazepine ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, subtotal , recurrence , oligoastrocytoma , subtotal 
+HF1334, 20-24, F,115.7, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, enhancing; mass effect ,2, NASS , Tegretol-XR ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Temozolomide(2) ,2, sub total x 2 , recurrence , anaplastic gemistocytic glioma; gemistocytic glioma , subtotal 
+HF1344, 60-64, -,9, ASTROCYTOMA,0,2, HENRY FORD HOSPITAL (RETRO),2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+HF1345, 15-19, F,83.5, ASTROCYTOMA,0, BLACK, HENRY FORD HOSPITAL (RETRO),2,2, enhancing  ,2, NASS , Tegretol ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1357, 20-24, M,30.8, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, cystic;  abnormal nodular enhancement; large T2 signal ,2, Yes Dose Unknown , NONE ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(5) ,2, subtotal , recurrence , subtotal , GBM 
+HF1381, 25-29, M,136.2, ASTROCYTOMA,0, BLACK, HENRY FORD HOSPITAL (RETRO),2,2, non enhancing ,2, NASS , Depakote ,2,2,2,2,2,2,2,2,2,2,2,2, No , No , NO(NO) ,2, NO , NO , NO , NO 
+HF1397, 60-64, F,30, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, large enhancing mass with vasogenic edema ,2, 4 mg b.i.d. , Trileptal and Neurontin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(8) ,2, NONE , NONE , NONE , NONE 
+HF1398, 55-59, M,66.8, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, thick irregular shaggy enhancement with vasogenic edema and mass effect ,2, 8mg q. daily , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ+cRA(4) ,2, NONE , NONE , NONE , NONE 
+HF1407, 55-59, F,5.2, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, vasogenic edema; subfalcine herniation ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(0) ,2, NONE , NONE , NONE , NONE 
+HF1409, 50-54, M,12.7, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, multicentric lesion with numerous enhancing lesions ,2, NONE , Depakote ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(1) ,2, subtotal , recurrence , GBM , subtotal 
+HF1433, 45-49, F,78.2, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, mass effect; necrosis; heterogeneous enhancement ,2, NASS , Phenytoin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1442, 35-39, M,47.2, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, non enhancing; mass effect ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(2) ,2, subtotal , recurrence , Anaplastic Astrocytoma , subtotal 
+HF1458, 45-49, M,8.8, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, heterogeneous; hyperintense lobular and multicentric lesion; ring enhancing ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , PZA(2) ,2, NONE , NONE , NONE , NONE 
+HF1463, 40-44, M,72, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, non enhancing ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(12) ,2, subtotal , recurrence , GBM , subtotal 
+HF1475, 15-19, M,31.7, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, unusual enhancment ,2, 6mg/day , NONE ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(22) ,2, subtotal , recurrence , undifferentiated malignant glioma , subtotal 
+HF1489, 50-54, F,68.3, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, non enhancing ,2, None , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , Temozolomide(2) ,2, NO , NO , No , No 
+HF1490, 65-69, M,4, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, ring enhancing  ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1502, 35-39, F,6.4, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, cystic; non-enhancing; edema ,2, None , Keppra ,2,2,2,2,2,2,2,2,2,2,2,2, NO , No , No(No) ,2, NO , NO , No , No 
+HF1511, 25-29, M,56.6, ASTROCYTOMA,0, OTHER, HENRY FORD HOSPITAL (RETRO),100,2, non enhancing ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(5) ,2, subtotal , recurrence , GBM , subtotal 
+HF1517, 55-59, F,8.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, enhancing; edema ,2, 8mg/day , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(3) ,2, subtotal , recurrence , radiation necrosis , subtotal 
+HF1538, 70-74, M,3.2, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, large enhancing mass ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(0) ,2, NONE , NONE , NONE , NONE 
+HF1540, 75-79, M,10.2, GBM,2, BLACK, HENRY FORD HOSPITAL (RETRO),90,2, 4.5cm large enhancing mass with subependymal spread; mild mass effect ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1551, 30-34, F,70.9, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, cystic; enhancing ,2, None , Topiramate ,2,2,2,2,2,2,2,2,2,2,2,2, NO , No , Temozolomide(12) ,2, NO , NO , No , No 
+HF1553, 10-14, M,71.2, OLIGODENDROGLIOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, cystic; ring enhancement ,2, None , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , No , No(No) ,2, NO , NO , No , No 
+HF1560, 75-79, F,1.2, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, extensive vasogenic edema; bilateral frontal enhancing mass ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1568, 30-34, F,42.6, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, minimal areas of enhancement; large T2 abnormality ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , Temodar(2) ,2, subtotal , recurrence , GBM , subtotal 
+HF1587, 30-34, M,75.3, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, compression of the left lateral horn of the lateral ventricle; high intensity on diffusion; scattered areas of enhancement ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , EBRT , Temodar(6) ,2, NONE , NONE , NONE , NONE 
+HF1588, 40-44, M,75.2, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, mildly hypointense on T1; no enhancement ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1606, 60-64, M,73.6, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),90,2, Ill defined hypointense on T1 images; minimal mass effect; no enhancement ,2, NONE , Tegretol ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
+HF1613, 35-39, M,66.8, ASTROCYTOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, no enhancement  ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NO , NO , NO(NO) ,2, NO , NO , NO , NO 
+HF1628, 45-49, M,14.6, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, enhancing mass ,2, NONE , NONE ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(4) ,2, subtotal , recurrence , GBM and radiation necrosis , subtotal 
+HF1671, 65-69, M,13.3, GBM,2, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, pre op CT only ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, EBRT , TMZ(1) ,2, subtotal , recurrence , CRN + minimal residual GBM , subtotal 
+HF1677, 50-54, M,63.5, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),100,2, no enhancement; mild mass effect ,2, none , Dilantin ,2,2,2,2,2,2,2,2,2,2,2,2, NO , NO , NO(NO) ,2, NO , No , NO , NO 
+HF1702, 75-79, F,5.4, OLIGODENDROGLIOMA,1, WHITE, HENRY FORD HOSPITAL (RETRO),80,2, enhancing mass with vasogenic edema ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2,2, Brachytherapy , NASS(NASS) ,2, NASS , NASS , NASS , NASS 
+HF1708, 20-24, M,67.8, ASTROCYTOMA,0, WHITE, HENRY FORD HOSPITAL (RETRO),2,2, nonenhancing abnormal signal intensity ,2, NASS , NASS ,2,2,2,2,2,2,2,2,2,2,2,2, NONE , NONE , NONE(NONE) ,2, NONE , NONE , NONE , NONE 
