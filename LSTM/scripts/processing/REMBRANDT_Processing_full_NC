@@ -1,0 +1,90 @@
+import pydicom
+import os
+import numpy as np
+import pandas as pd
+import torch
+from PIL import Image
+from torchvision import transforms
+import pywt
+from scipy.fftpack import dct
+
+# Load patient grades from CSV
+excel_path = "LSTM/data/processed/clinical_cleaned_v1.csv"
+df = pd.read_csv(excel_path)
+patient_grades = dict(zip(df["Sample"], df[" Grade"]))
+target_folders = set(df["Sample"])
+
+# Resize only
+ResizeImage = transforms.Compose([
+    transforms.Resize((256, 256)),
+])
+
+def preprocess_rembrandt(base_path):
+    patient_data = {}
+
+    for root, dirs, files in os.walk(base_path):
+        matched_subject = next((folder for folder in target_folders if folder in root), None)
+        if matched_subject is None:
+            continue
+
+        for file in files:
+            if not file.endswith(".dcm"):
+                continue
+
+            file_path = os.path.join(root, file)
+            try:
+                print(f"\n Processing: {file_path}")
+
+                # Load DICOM
+                dcm_data = pydicom.dcmread(file_path)
+                pixel_array = dcm_data.pixel_array.astype(np.float32)
+
+                # Rescale
+                slope = getattr(dcm_data, 'RescaleSlope', 1)
+                intercept = getattr(dcm_data, 'RescaleIntercept', 0)
+                pixel_array = pixel_array * slope + intercept
+
+                # Normalize to [0, 1]
+                pixel_array -= np.min(pixel_array)
+                if np.max(pixel_array) != 0:
+                    pixel_array /= np.max(pixel_array)
+
+                # Resize
+                image = Image.fromarray((pixel_array * 255).astype(np.uint8))
+                image = ResizeImage(image)
+                image_np = np.array(image).astype(np.float32) / 255.0
+
+                # DWT (Haar) on entire image
+                coeffs2 = pywt.dwt2(image_np, 'haar')
+                LL, (LH, HL, HH) = coeffs2
+                
+
+                # DCT on LL band 
+                dct_ll = dct(dct(LL.T, norm='ortho').T, norm='ortho')
+                dct_block = dct_ll[:10, :10].flatten()
+                
+
+                # Store features 
+                if matched_subject not in patient_data:
+                    print(f"New patient: {matched_subject} (Grade {patient_grades.get(matched_subject)})")
+                    patient_data[matched_subject] = {
+                        "grade": patient_grades.get(matched_subject),
+                        "slices": []
+                    }
+
+                rel_path = os.path.relpath(file_path, base_path)
+                patient_data[matched_subject]["slices"].append({
+                    "features": torch.tensor(dct_block, dtype=torch.float32),
+                })
+
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
+
+    return patient_data
+
+rembrandt_dir = r"REMBRANDT FOLDER PATH"
+Patient_Data = preprocess_rembrandt(rembrandt_dir)
+
+save_path = "LSTM/data/processed/patient_feature_data_v3.pt"
+torch.save(Patient_Data, save_path)
+print(f"\nSaved processed feature data to '{save_path}'")

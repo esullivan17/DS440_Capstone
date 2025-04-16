@@ -1,0 +1,92 @@
+import os
+import pydicom
+import numpy as np
+import pandas as pd
+import torch
+from PIL import Image
+from torchvision import transforms
+import pywt
+from scipy.fftpack import dct
+
+# Load patient grades from CSV
+excel_path = "LSTM/data/processed/clinical_cleaned_v2.csv"
+df = pd.read_csv(excel_path)
+df["Sample"] = df["Sample"].astype(str).str.replace("_", "-", regex=False)
+patient_grades = dict(zip(df["Sample"], df[" Grade"]))
+target_folders = set(df["Sample"])
+
+# Resize only
+ResizeImage = transforms.Compose([
+    transforms.Resize((256, 256)),
+])
+
+def preprocess_by_folder(base_path):
+    patient_data = {}
+
+    for root, dirs, files in os.walk(base_path):
+        parts = root.split(os.sep)
+
+        # Identify the patient ID
+        matched_subject = next((folder for folder in target_folders if folder in parts), None)
+        if matched_subject is None:
+            continue
+
+        # Extract folder ID to track sequences (e.g., X, Y, Z)
+        folder_id = os.path.relpath(root, os.path.join(base_path, matched_subject))
+
+        # Process each .dcm in the folder
+        feature_sequence = []
+        for file in sorted(files):  # sort files for order
+            if not file.endswith(".dcm"):
+                continue
+
+            file_path = os.path.join(root, file)
+            try:
+                dcm_data = pydicom.dcmread(file_path)
+                pixel_array = dcm_data.pixel_array.astype(np.float32)
+
+                # Rescale
+                slope = getattr(dcm_data, 'RescaleSlope', 1)
+                intercept = getattr(dcm_data, 'RescaleIntercept', 0)
+                pixel_array = pixel_array * slope + intercept
+
+                # Normalize [0,1]
+                pixel_array -= np.min(pixel_array)
+                if np.max(pixel_array) != 0:
+                    pixel_array /= np.max(pixel_array)
+
+                # Resize and convert
+                image = Image.fromarray((pixel_array * 255).astype(np.uint8))
+                image = ResizeImage(image)
+                image_np = np.array(image).astype(np.float32) / 255.0
+
+                # Wavelet and DCT
+                coeffs2 = pywt.dwt2(image_np, 'haar')
+                LL, _ = coeffs2
+                dct_ll = dct(dct(LL.T, norm='ortho').T, norm='ortho')
+                dct_block = dct_ll[:10, :10].flatten()
+
+                feature_sequence.append(torch.tensor(dct_block, dtype=torch.float32))
+
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
+
+        # Save sequence if any features were extracted
+        if feature_sequence:
+            if matched_subject not in patient_data:
+                print(f"New patient: {matched_subject} (Grade {patient_grades.get(matched_subject)})")
+                patient_data[matched_subject] = {
+                    "grade": patient_grades.get(matched_subject),
+                    "sequences": []
+                }
+
+            patient_data[matched_subject]["sequences"].append(feature_sequence)
+
+    return patient_data
+
+rembrandt_dir = r"REMBRANDT FOLDER PATH"
+Patient_Data = preprocess_by_folder(rembrandt_dir)
+
+save_path = "LSTM/data/processed/patient_feature_data_v5.pt"
+torch.save(Patient_Data, save_path)
+print(f"\nSaved folder-based feature data to '{save_path}'")
